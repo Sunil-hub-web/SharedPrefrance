@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="19dp"
+        tools:ignore="MissingConstraints"
+        android:hint="name"
+        android:padding="15dp"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="phone"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        android:padding="15dp"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        android:padding="15dp"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="store"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        android:padding="15dp"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="moving"
+        app:layout_constraintTop_toBottomOf="@+id/store"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        android:padding="15dp"
+        android:layout_margin="15dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
